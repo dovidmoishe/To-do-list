@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.dark {
+    background-color: #191919;
+    color: white;
+}
+.fa-moon {
+    text-align: left;
+}
+li {
+    cursor:pointer;
+}
+input {
+    width: 100%;
+    border-radius: 2em;
+    padding: 16px 12px;
+}
+.todo {
+    display: flex;
+    flex-direction: column;
+    padding: 5em;
+    gap: 2em;
+}
+button {
+    padding: 10px;
+    background-color: rgb(196, 80, 196);
+    border: none;
+    width: 5rem;
+    border-radius: 15px;
+}
+.user-inp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+li {
+    padding: 1em;
+    text-align: center;
+    background-color: rgb(134, 131, 131);
+
+}
+li:nth-child(even) {
+    background-color: grey;
+}
+li:nth-child(odd) {
+    background-color: rgb(247, 248, 248);
+}
