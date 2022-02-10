@@ -1,50 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .dark {
-    background-color: #191919;
-    color: white;
+  background-color: #191919;
+  color: white;
+}
+body {
+    background-color: #fff;
+    font-family: 'Comfortaa', cursive;
 }
 .fa-moon {
-    text-align: left;
+  text-align: left;
 }
 li {
-    cursor:pointer;
+  cursor: pointer;
 }
 input {
-    width: 100%;
-    border-radius: 2em;
-    padding: 16px 12px;
+  width: 100%;
+  border-radius: 2em;
+  padding: 16px 12px;
+  border: 1px solid;
 }
 .todo {
-    display: flex;
-    flex-direction: column;
-    padding: 5em;
-    gap: 2em;
+  display: flex;
+  flex-direction: column;
+  padding: 5em;
+  gap: 2em;
 }
-button {
-    padding: 10px;
-    background-color: rgb(196, 80, 196);
-    border: none;
-    width: 5rem;
-    border-radius: 15px;
+.user-inp button {
+  padding: 10px;
+  background-color: rgb(196, 80, 196);
+  border: none;
+  width: 5rem;
+  border-radius: 15px;
 }
 .user-inp {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 li {
-    padding: 1em;
-    text-align: center;
-    background-color: rgb(134, 131, 131);
-
+  padding: 1em;
+  text-align: center;
+  background-color: rgb(134, 131, 131);
 }
 li:nth-child(even) {
-    background-color: grey;
+  background-color: grey;
 }
 li:nth-child(odd) {
-    background-color: rgb(247, 248, 248);
+  background-color: rgb(247, 248, 248);
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  position: fixed;
+  background: #333;
+  padding: 10px 0;
+  color: #fff;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sign-up {
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 1em;
+    font-family: 'Comfortaa', cursive;
+    background-color: rgb(196, 80, 196);
 }

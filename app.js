@@ -1,3 +1,6 @@
+window.onLoad = () => {
+    document.body.style.backgroundColor = '#fff'
+}
 const input_txt = document.getElementById('todotxt')
 const add_btn = document.querySelector(".add-btn")
 const todolst = document.getElementById('todo-view')
@@ -18,8 +21,10 @@ add_btn.addEventListener('click',() => {
 })
 function Darkmode() {
     const body = document.body;
-    body.classList.add("dark")
-    if(body.classList.contains("dark")) {
-        todolst.style.color = '#000'
+    if(body.classList.contains('dark')) {
+         body.classList.remove('dark')
+    } else {
+        body.classList.add('dark')
     }
+    
 }
